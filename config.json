@@ -1,0 +1,51 @@
+[32mapplicationName: [39m      openhabhomekit
+[32mapplicationId: [39m        [34m1133011[39m
+[32mdeviceType: [39m           raspberry-pi
+[32muserId: [39m               [34m38004[39m
+[32musername: [39m             gh_duquesnay
+[32mappUpdatePollInterval: [39m[34m60000[39m
+[32mlistenPort: [39m           [34m48484[39m
+[32mvpnPort: [39m              [34m443[39m
+[32mapiEndpoint: [39m          https://api.resin.io
+[32mvpnEndpoint: [39m          vpn.resin.io
+[32mregistryEndpoint: [39m     registry.resin.io
+[32mdeltaEndpoint: [39m        https://delta.resin.io
+[32mpubnubSubscribeKey: [39m   sub-c-bbc12eba-ce4a-11e3-9782-02ee2ddab7fe
+[32mpubnubPublishKey: [39m     pub-c-6cbce8db-bfd1-4fdf-a8c8-53671ae2b226
+[32mmixpanelToken: [39m        99eec53325d4f45dd0633abd719e3ff1
+[32mfiles: [39m
+  [32mnetwork/settings: [39m
+    """
+      [global]
+      OfflineMode=false
+      TimeUpdates=manual
+      
+      [WiFi]
+      Enable=true
+      Tethering=false
+      
+      [Wired]
+      Enable=true
+      Tethering=false
+      
+      [Bluetooth]
+      Enable=true
+      Tethering=false
+    """
+  [32mnetwork/network.config: [39m
+    """
+      [service_home_ethernet]
+      Type = ethernet
+      Nameservers = 8.8.8.8,8.8.4.4
+      
+      [service_home_wifi]
+      Hidden = true
+      Type = wifi
+      Name = Livebox-F39A
+      Passphrase = rococo opinion oats
+      Nameservers = 8.8.8.8,8.8.4.4
+    """
+[32mconnectivity: [39m         connman
+[32mwifiSsid: [39m             Livebox-F39A
+[32mwifiKey: [39m              rococo opinion oats
+[32mapiKey: [39m               do2vXPOCXgFA2TDDy8og4XSTP8Xn8Bsn
